@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <header>
+        <nav class="row">
+            <div class="column">
+                <h1 class="brand-logo">Maths Practice</h1>
+            </div>
+
+            <div id="links" class="column">
+                <a href="index.html">Home</a>
+                <a href="math.html">Quiz</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="content" class="row">
+            <div id="quiz-section" class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <div id="quiz-container">
+                            <div id="report-container">
+                                <div class="row">
+                                    <h1 class="title">Report card</h1>
+                                </div>
+
+                                <div class="row">
+                                    <h1 class="pass-rate" id="pass-rate"></h1>
+                                </div>
+
+                                <div class="divider"></div>
+
+                                <div class="row">
+                                    <h1>Questions you got incorrect</h1>
+                                </div>
+                                <div class="row">
+                                    <div id="incorrectQuestions">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <button id="btn-ok" class="raised-button" onclick="backToSelection()">OK</button>
+                                </div>
+                            </div>
+                            <p id="question-count"></p>
+                            <div id="center">
+                                <form id="question-container">
+
+                                </form>
+
+                                <div id="action-buttons">
+                                    <button id="btn-next" class="raised-button">Next</button>
+                                    <button id="btn-quit"></button>
+                                </div>
+                            </div>
+                            <div id="progress-container">
+                                <div id="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="profile-section" class="column">
+                <div class="card">
+                    <div class="card-header">
+                        <div id="user-image" class="circle-crop"></div>
+                        <h1 id="username"></h1>
+                        <div id="level-container">
+                            <img src="img/medal.png" width="42" height="42">
+                            <p id="level"></p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div id="regDetails">
+                                <span id="gender"></span>
+                                <span id="dobAge"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="modal-content">
+            <img src="img/medal.png" width="70" height="70">
+            <h1 class="modal-title">You leveled up!</h1>
+            <h3 class="modal-message">Keep it up! You&apos;re doing great!</h3>
+            <button id="close" class="raised-button">Close</button>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

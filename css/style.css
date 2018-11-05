@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+body, html {
+    font-size: 100%;
+    height: 100%;
+}
+
+p, h1, h2, h3, h4, h5,
+h6, span, section, div, label,
+input, button, body, html, a, ul , li,
+fieldset, i {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../img/backgroud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.column {
+    width: 50%;
+    float: left;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#left {
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+#register {
+    margin: 10% auto;
+}
+
+#right {
+    width: 60%;
+}
+
+nav {
+    height: 54px;
+    box-shadow: 0px 2px 3px rgba(116, 116, 116, 0.251);
+    padding: 0 10%;
+    position: relative;
+    background-color: white;
+}
+
+.brand-logo {
+    margin-top: 8px;
+}
+
+#links {
+    text-align: right;
+    margin-top: 12px;
+}
+
+#links > a:not(:last-child) {
+    margin-right: 20px;
+}
+
+#links > a {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #868686;
+}
+
+#links > a:hover {
+    color: #3e49eb;
+}
+
+#content {
+    padding: 0 10%;
+    margin: 5% auto;
+}
+
+#img-caption {
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+#form-heading {
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(116, 116, 116, 0.251);
+    background-color: white;
+}
+
+.card-content {
+    padding: 30px 80px;
+    position: relative;
+}
+
+.card-header {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 40px;
+}
+
+input {
+    border: 2px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 15px;
+    width: 80%;
+}
+
+input:focus {
+    border: 2px solid #3e49eb;
+}
+
+#gender-label {
+    margin-bottom: 5px;
+}
+
+input[type="radio"]{
+    width: 20px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.hint {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: white;
+    padding: 2px;
+    color: #868686;
+}
+
+button[type="submit"] {
+    width: 120px;
+    height: 50px;
+    background-color: #3e49eb;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    box-shadow: 0px 2px 3px #c0c0c0;
+    cursor: pointer;
+}
+
+.circle-crop {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: #eee no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    box-shadow: 0px 2px 5px #74747450;
+}
+
+#user-image {
+    background-image: url(http://www.voont.com/files/images/edit/7-ridiculous-ways-boost-self-esteem/happy.jpg);
+}
+
+#level-container {
+    position: relative;
+}
+
+#level-container img, p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#quiz-section {
+    width: 65%;
+    margin: 0 20px 0 0;
+}
+
+#profile-section {
+    width: 33%;
+}
+
+#profile-section .card-content {
+    padding: 5px 80px;
+}
+
+#username {
+    margin: 10px 0;
+}
+
+#level {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+#center {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+#selection {
+    display: block;
+}
+
+#action-buttons {
+    display: none;
+}
+
+.raised-button {
+    border-radius: 5px;
+    background-color: #3e49eb;
+    padding: 15px;
+    font-weight: 700;
+    min-width: 90px;
+    min-height: 40px;
+    color: white;
+    box-shadow: 0px 3px 4px #e4e4e4;
+    margin: 0 auto;
+}
+
+#btn-quit {
+    border-radius: 100%;
+    background-color: #d42a2a;
+    background-image: url(../img/x.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 3px 4px #e4e4e4;
+}
+
+.title {
+    font-size: 1.75em;
+    margin-bottom: 30px;
+}
+
+#answer {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#progress-container {
+    width: 100%;
+    height: 20px;
+    border-radius: 100px;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: none;
+}
+
+#progress {
+    background-color: #3e49eb;
+    width: 0%;
+    height: 20px;
+    border-radius: 100px;
+}
+
+#question-count {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 1.35em;
+    display: none;
+}
+
+#question-container {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 3px 4px #747474;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.modal-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.modal-message {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#regDetails {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#dobAge {
+    color: #868686;
+    font-size: 0.95em;
+}
+
+#gender {
+    color: #747474;
+    font-size: 1.05em;
+}
+
+#report-container {
+    display: none;
+}
+
+#incorrectQuestions {
+    color: #d42a2a;
+    margin: 20px 0;
+    overflow: auto;
+    height: 400px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    border-radius: 100px;
+    background-color: #929292;
+}
+
+.pass-rate {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #868686;
+}
