@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <title>Maths Practice</title>
+</head>
+
+<body>
+    <header>
+        <nav class="row">
+            <div class="column">
+                <h1 class="brand-logo">Maths Practice</h1>
+            </div>
+
+            <div id="links" class="column">
+                <a href="index.html">Home</a>
+                <a href="math.html">Quiz</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="content">
+        <div class="row">
+            <div id="left" class="column">
+                <img width="90%" src="img/learning-math.png">
+                <figcaption id="img-caption">For kids aged 9 to 12</figcaption>
+            </div>
+            <div id="right" class="column">
+                <form id="register" class="card">
+                    <div class="card-content">
+                        <h3 id="form-heading">Please fill out all fields</h3>
+                        <fieldset class="row">
+                            <div class="column">
+                                <div class="input-container">
+                                    <label class="hint">First name</label>
+                                    <input type="text" id="first_name" name="first_name" minlength="3" required>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="input-container">
+                                    <label class="hint">Last name</label>
+                                    <input type="text" id="last_name" name="last_name" minlength="3" required>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="row">
+                            <div class="column">
+                                <div class="input-container">
+                                    <label class="hint">Middle name</label>
+                                    <input type="text" id="middle_name" name="middle_name" minlength="3">
+                                </div>
+                            </div>
+                            <div class="column">
+                                <span id="gender-label">Gender</span> <br>
+                                <input type="radio" name="gender" value="Male"> Male
+                                <input type="radio" name="gender" value="Female"> Female
+                            </div>
+                        </fieldset>
+                        <fieldset class="row">
+                            <div class="column">
+                                <div class="input-container">
+                                    <label class="hint">Date of Birth</label>
+                                    <input type="date" name="dob" id="dob" onchange="calculateAge(event)" required>
+                                </div>
+
+
+                            </div>
+                            <div class="column">
+                                <div class="input-container">
+                                    <label class="hint">Age</label>
+                                    <input type="number" readonly required name="age" id="age">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="row">
+                            <div class="input-container">
+                                <input type="file" accept=".jpg, .png" id="image" name="file" onchange="readURL(this)">
+                                <label class="hint">Choose your profile image</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="row">
+                            <button type="submit" class="raised-button" onclick="registerUser()">Register</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
